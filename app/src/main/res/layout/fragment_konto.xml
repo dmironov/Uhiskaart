@@ -1,0 +1,110 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Обёртка для смещения вниз -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="386dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <!-- Вид для логина -->
+        <LinearLayout
+            android:id="@+id/login_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/kasutajanimi_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@android:drawable/edit_text"
+                android:hint="Kasutajanimi"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/parool_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@android:drawable/edit_text"
+                android:hint="Parool"
+                android:inputType="textPassword"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/error_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textColor="#FF0000"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/logi_sisse_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:padding="16dp"
+                android:text="Logi Sisse"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Вид после успешного входа -->
+        <LinearLayout
+            android:id="@+id/logged_in_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <!-- Контейнер для изображения и текста -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="284dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal">
+
+                <!-- Изображение -->
+                <ImageView
+                    android:id="@+id/logged_in_image"
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/user" />
+
+                <!-- Текст -->
+                <TextView
+                    android:id="@+id/logged_in_text"
+                    android:layout_width="0dp"
+                    android:layout_height="143dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_weight="1"
+                    android:gravity="top|start"
+                    android:text="Nimi: Donald Trump&#10;Isikukood: 34606140001&#10;Elukoht: Mõisaküla, Mulgi vald&#10;&#10;Kaardi nr.: 123456789ABCDEF0"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Кнопка внизу -->
+            <Button
+                android:id="@+id/logi_valja_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="16dp"
+                android:background="#000000"
+                android:padding="16dp"
+                android:text="Logi Välja"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

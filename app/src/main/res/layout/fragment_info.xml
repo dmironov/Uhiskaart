@@ -1,0 +1,110 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:padding="16dp">
+
+        <!-- Картинка -->
+
+        <!-- Текст -->
+
+        <ImageView
+            android:id="@+id/info_image"
+            android:layout_width="wrap_content"
+            android:layout_height="134dp"
+            android:layout_gravity="center|top"
+            android:src="@drawable/info_image" />
+
+        <TextView
+            android:id="@+id/info_text1"
+            android:layout_width="365dp"
+            android:layout_height="62dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+
+            android:gravity="center"
+            android:text="See on testrakendus NFC-kaartide valideerimiseks Tallinnas. Funktsionaalsuse testimiseks oleks vaja Proxmark3 Easy seadet." />
+
+        <TextView
+            android:id="@+id/info_text0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="Kuidas testida:" />
+
+
+        <TextView
+            android:id="@+id/info_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="1. Vali menüüst Valideeri ja too see Proxmark3 Easy kõrvale&#10;" />
+
+        <ImageView
+            android:id="@+id/info_proxmark1"
+            android:layout_width="346dp"
+            android:layout_height="181dp"
+            android:layout_gravity="center"
+            android:src="@drawable/proxmark_info1" />
+
+        <TextView
+            android:id="@+id/info_text3"
+            android:layout_width="wrap_content"
+            android:layout_height="101dp"
+            android:layout_marginTop="16dp"
+            android:text="&#10;2. Käivitage käsk pm3 --> hf 14a apdu -s -d 00A4040007F001020304050600&#10;&#10;3. Kui valideerimine õnnestub, peab tulema vastus 123456789ABCDEF0" />
+
+        <ImageView
+            android:id="@+id/cmd"
+            android:layout_width="322dp"
+            android:layout_height="143dp"
+            android:layout_gravity="center"
+            android:src="@drawable/cmd" />
+
+        <TextView
+            android:id="@+id/info_text5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Käsk pm3 --> hf 14a list võib näidata kommunikatsiooni logi&#10;" />
+
+        <ImageView
+            android:id="@+id/cmd2"
+            android:layout_width="324dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:src="@drawable/cmd2" />
+
+        <TextView
+            android:id="@+id/info_text6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Käsk pm3 --> hf 14a reader võib näidata kas seade on aktiivne&#10;" />
+
+        <ImageView
+            android:id="@+id/cmd3"
+            android:layout_width="273dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/cmd3" />
+
+        <TextView
+            android:id="@+id/info_text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="&#10;Küsimused arendajale ja koostööettepanekud: dmm.mironov@gmail.com&#10;&#10;Rakenduse versioon v1.0&#10;Kõik õigused kaitstud © 2024 Dmitri Mironov" />
+
+
+    </LinearLayout>
+</ScrollView>

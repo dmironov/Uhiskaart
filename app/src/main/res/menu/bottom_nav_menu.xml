@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_valideeri"
+        android:icon="@drawable/ic_validate"
+        android:title="Valideeri" />
+
+    <item
+        android:id="@+id/menu_konto"
+        android:icon="@drawable/ic_account"
+        android:title="Minu Konto" />
+
+    <item
+        android:id="@+id/menu_info"
+        android:icon="@drawable/ic_info" 
+        android:title="Info" />
+</menu>

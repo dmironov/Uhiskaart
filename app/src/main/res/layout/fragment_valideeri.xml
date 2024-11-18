@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Карточка -->
+    <ImageView
+        android:id="@+id/card"
+        android:layout_width="325dp"
+        android:layout_height="195dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/card" />
+
+    <!-- Текст -->
+    <TextView
+        android:id="@+id/nfc_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Tooge oma telefon NFC-terminali&#10;" />
+
+    <ImageView
+        android:id="@+id/nfc"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center" />
+</LinearLayout>
